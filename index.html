@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head> 
+<!-- после окончания верстки написать gulp build что бы все перенеслось! В концк проекта -->
+<body>
+    <section>
+        <div class="container">
+            <div class="option">
+                <div class="option__body">
+                    <form action="#">
+                        <label class="option__body-label">
+                            player 1:
+                            <input type="text" class="option__body-name player--first">
+                        </label>
+                        <label class="option__body-label">
+                            Player 2:
+                            <input type="text" class="option__body-name player--second">
+                        </label>
+                        <button class="option__body-button">START</button>
+                    </form>
+                </div>
+            </div>
+<!-- =============================================== -->
+            <div class="block">
+                <div id="game" class="block__square">
+                    <div class="block__square-item" data-num=1></div>
+                    <div class="block__square-item" data-num=2></div>
+                    <div class="block__square-item" data-num=3></div>
+                    <div class="block__square-item" data-num=4></div>
+                    <div class="block__square-item" data-num=5></div>
+                    <div class="block__square-item" data-num=6></div>
+                    <div class="block__square-item" data-num=7></div>
+                    <div class="block__square-item" data-num=8></div>
+                    <div class="block__square-item" data-num=9></div>
+                </div>
+            </div>
+<!-- ================================================== -->
+           <div id="popup" class="popup">
+               <div class="popup__body">
+                   <div class="popup__content">
+                       <div class="popup__content-flex">
+                            <div class="popup__title">Result:</div>
+                            <a href="#" class="popup__close">X</a>
+                       </div>
+                       <div class="popup__text"></div>
+                       <button class="popup__restart">New game</button>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </section>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
+
+
